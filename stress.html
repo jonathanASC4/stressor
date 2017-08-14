@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <script
+    src="http://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="stress.js"></script>
+    <style>
+        body{
+            background: url("https://upload.wikimedia.org/wikipedia/commons/6/6b/Lonely_Road%2C_Idaho_State_Highway_75.jpg");
+            margin: 0px;
+            background-position: center;
+        }
+        h1{
+            text-align: center;
+            color: white;
+        }
+        .signs{
+            text-align: center;
+        }
+        .g-signin2{
+            width: 100%;
+        }
+        .g-signin2 > div{
+            margin: 0 auto;
+        }
+        #signout{
+            color: white;
+        }
+        header{
+            width: 100%;
+            background: black;
+            padding: 10px
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Please login or sign up</h1>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+	    <meta name="google-signin-client_id" content="603840480840-thm30otg8818n7unjlvk64a3ts0ru0bp.apps.googleusercontent.com">
+        <div class="signs">
+ 		    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            <a id="signout" href="" class="signOut" onclick="onSignOut();">Sign out</a>
+        </div> 
+    </header>
+</body>
+</html>
